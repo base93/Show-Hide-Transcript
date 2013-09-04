@@ -97,7 +97,7 @@ class Show_Transcript {
      * @since 1.0.0
      */
     public function sht_transcript_shortcode( $atts, $content = null ) {
-        $sht_transcript  = '<h3 class="transcript-toggle transcript-button">Show / Hide Transcript</h3>';
+        $sht_transcript  = '<h3 class="transcript-toggle transcript-button">'. __( 'Show / Hide Transcript', 'show-transcript' ) .'</h3>';
         $sht_transcript .= '<div id="sht-show-transcript">' . wpautop( $content ) . '</div>';
         return $sht_transcript;
     }
